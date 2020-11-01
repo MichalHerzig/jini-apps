@@ -1,7 +1,6 @@
-package com.example.myapplication;
+package com.example.myapplication.interfaces;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.myapplication.model.Numbers;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

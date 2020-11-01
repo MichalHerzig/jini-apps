@@ -1,7 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.model;
+
+import com.example.myapplication.model.Num;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Numbers {
     private ArrayList<Num> numbers;

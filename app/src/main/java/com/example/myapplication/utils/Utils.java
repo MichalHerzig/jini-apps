@@ -1,6 +1,7 @@
-package com.example.myapplication;
+package com.example.myapplication.utils;
 
-import java.util.ArrayList;
+import com.example.myapplication.model.Num;
+
 import java.util.List;
 
 public  class Utils {

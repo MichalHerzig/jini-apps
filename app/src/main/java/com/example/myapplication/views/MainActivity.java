@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.views;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.myapplication.R;
+import com.example.myapplication.adapters.NumbersAdapter;
+import com.example.myapplication.model.Num;
+import com.example.myapplication.viewModels.NumbersViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,15 +1,15 @@
-package com.example.myapplication;
+package com.example.myapplication.viewModels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.recyclerview.widget.SortedList;
+
+import com.example.myapplication.interfaces.Api;
+import com.example.myapplication.model.Num;
+import com.example.myapplication.model.Numbers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,21 +26,23 @@ public class NumbersViewModel extends ViewModel {
             loadNumbers();
         }
 
-      /*  if(numbersList.getValue()== null){
+  /*     if(numbersList.getValue()== null){
             ArrayList<Num> n=new ArrayList<>();
             n.add(new Num(1));
             n.add(new Num(2));
             n.add(new Num(7));
-            n.add(new Num(4));
-            n.add(new Num(5));
+            n.add(new Num(4));n.add(new Num(25));n.add(new Num(35));n.add(new Num(75));n.add(new Num(55));
+            n.add(new Num(5));n.add(new Num(234));n.add(new Num(235));n.add(new Num(-235));n.add(new Num(8));n.add(new Num(15));
+           n.add(new Num(5)); n.add(new Num(-8)); n.add(new Num(-45)); n.add(new Num(-4));
             numbersList.setValue(n);
         }*/
-  Collections.sort(numbersList.getValue(), new Comparator<Num>() {
+        Collections.sort(numbersList.getValue());
+/*  Collections.sort(numbersList.getValue(), new Comparator<Num>() {
             @Override
             public int compare(Num o1, Num o2) {
                 return o2.getNumber()-o1.getNumber();
             }
-        });
+        });*/
         return numbersList;
 }
 
